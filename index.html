@@ -1,293 +1,243 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Orientation 2026 | BS Robotics & AI</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f5f7fb;
-      color: #17243b;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #071a35;
-      color: white;
-      text-align: center;
-      padding: 24px 16px;
-      border-bottom: 4px solid #d9ae52;
-    }
-
-    header h1 {
-      font-size: clamp(26px, 5vw, 42px);
-      letter-spacing: 1px;
-    }
-
-    header p {
-      color: #e8c66e;
-      margin-top: 8px;
-    }
-
-    nav {
-      background: #10294c;
-      padding: 13px;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 14px;
-      font-weight: bold;
-      display: inline-block;
-    }
-
-    nav a:hover {
-      color: #e8c66e;
-    }
-
-    .hero {
-      min-height: 430px;
-      background:
-        linear-gradient(90deg, rgba(4, 19, 42, .88), rgba(4, 19, 42, .30)),
-        url("images/orientation-decor.jpg") center/cover;
-      display: flex;
-      align-items: center;
-      padding: 55px 8%;
-      color: white;
-    }
-
-    .hero-content {
-      max-width: 700px;
-    }
-
-    .hero h2 {
-      font-size: clamp(32px, 6vw, 56px);
-      line-height: 1.15;
-      margin-bottom: 18px;
-    }
-
-    .hero p {
-      font-size: 19px;
-      margin-bottom: 25px;
-    }
-
-    .button {
-      display: inline-block;
-      background: #d9ae52;
-      color: #071a35;
-      padding: 12px 24px;
-      border-radius: 5px;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 55px 20px;
-    }
-
-    .section-title {
-      text-align: center;
-      color: #071a35;
-      font-size: 30px;
-      margin-bottom: 12px;
-    }
-
-    .gold-line {
-      width: 70px;
-      height: 4px;
-      background: #d9ae52;
-      margin: 0 auto 30px;
-    }
-
-    .about {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
-      align-items: center;
-    }
-
-    .about img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 8px 25px #10294c22;
-    }
-
-    .about h3 {
-      color: #10294c;
-      margin-bottom: 12px;
-      font-size: 24px;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 22px;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 9px;
-      box-shadow: 0 5px 18px #071a3520;
-      transition: transform .25s;
-    }
-
-    .gallery img:hover {
-      transform: translateY(-5px);
-    }
-
-    .caption {
-      text-align: center;
-      padding: 8px;
-      color: #243b5a;
-      font-weight: bold;
-    }
-
-    .quote {
-      background: #e9eef6;
-      border-left: 5px solid #d9ae52;
-      padding: 25px;
-      border-radius: 6px;
-      text-align: center;
-      font-size: 20px;
-    }
-
-    footer {
-      background: #071a35;
-      color: white;
-      text-align: center;
-      padding: 25px 15px;
-    }
-
-    footer span {
-      color: #e8c66e;
-    }
-
-    @media (max-width: 650px) {
-      .about {
-        grid-template-columns: 1fr;
-      }
-
-      nav a {
-        margin: 5px 8px;
-      }
-
-      .hero {
-        min-height: 380px;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07172e">
+<meta name="description" content="Orientation 2026 — BS Robotics and Artificial Intelligence, University of Engineering and Technology Taxila.">
+<title>Orientation 2026 | Robotics & AI — UET Taxila</title>
+<style>
+:root{--navy:#07172e;--navy2:#0d2545;--gold:#d8b46a;--cream:#f6f3ec;--ink:#172338;--muted:#667085;--white:#fff;--line:rgba(255,255,255,.16)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.65}
+a{color:inherit}
+.topbar{background:#041022;color:#dbe2ed;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;padding:9px 5vw;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.nav{position:sticky;top:0;z-index:20;background:rgba(7,23,46,.96);backdrop-filter:blur(12px);color:white;border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1220px;margin:auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand-mark{width:42px;height:42px;border:1px solid var(--gold);color:var(--gold);display:grid;place-items:center;font-weight:900;letter-spacing:-.08em;border-radius:50%}
+.brand strong{display:block;font-size:.95rem;letter-spacing:.07em}
+.brand small{display:block;color:#c6cfdd;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase}
+.links{display:flex;align-items:center;gap:26px}
+.links a{text-decoration:none;font-size:.88rem;color:#e6ebf2}
+.links a:hover{color:var(--gold)}
+.menu-btn{display:none;border:1px solid #ffffff45;color:white;background:transparent;border-radius:8px;padding:8px 12px;font-size:1rem}
+.hero{position:relative;min-height:680px;display:flex;align-items:end;overflow:hidden;background:var(--navy);color:white}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,13,28,.92) 0%,rgba(3,13,28,.67) 48%,rgba(3,13,28,.08) 100%),linear-gradient(0deg,rgba(3,13,28,.76),transparent 55%),url("images/orientation-decor.jpg") center 42%/cover no-repeat;transform:scale(1.015)}
+.hero:after{content:"";position:absolute;inset:22px;border:1px solid rgba(216,180,106,.45);pointer-events:none}
+.hero-content{position:relative;z-index:1;max-width:1220px;width:100%;margin:0 auto;padding:100px 7vw 95px}
+.eyebrow{display:flex;align-items:center;gap:12px;text-transform:uppercase;letter-spacing:.22em;font-size:.75rem;color:var(--gold);font-weight:800}
+.eyebrow:before{content:"";width:38px;height:1px;background:var(--gold)}
+.hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(3.2rem,8vw,7.2rem);line-height:.96;letter-spacing:-.045em;font-weight:500;max-width:850px;margin:24px 0}
+.hero h1 em{font-weight:400;color:var(--gold)}
+.hero p{max-width:590px;font-size:1.08rem;color:#e2e8f0}
+.hero-meta{display:flex;gap:18px 28px;flex-wrap:wrap;margin:34px 0 30px;color:#f1f4f8;font-size:.86rem}
+.hero-meta span{display:flex;gap:9px;align-items:center}
+.hero-meta b{color:var(--gold);font-size:1.1rem}
+.btn{display:inline-flex;align-items:center;gap:13px;text-decoration:none;padding:14px 21px;background:var(--gold);color:#111d2d;font-size:.84rem;font-weight:850;letter-spacing:.04em;border:1px solid var(--gold);transition:.2s}
+.btn:hover{background:#f0d49a;transform:translateY(-2px)}
+.btn-outline{background:transparent;color:white;border-color:#ffffff70;margin-left:8px}
+.btn-outline:hover{background:#ffffff14;color:white}
+.section{padding:100px 24px}
+.container{max-width:1160px;margin:0 auto}
+.section-head{display:grid;grid-template-columns:1fr 1.15fr;gap:50px;align-items:end;margin-bottom:45px}
+.kicker{color:#94712e;text-transform:uppercase;font-size:.72rem;letter-spacing:.2em;font-weight:900}
+h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.3rem,5vw,4.2rem);line-height:1.06;letter-spacing:-.035em;font-weight:500;color:var(--navy);margin-top:14px}
+.section-head p{color:var(--muted);max-width:530px;font-size:1rem}
+.about-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center}
+.about-photo{position:relative;padding:0 0 24px 24px}
+.about-photo:before{content:"";position:absolute;left:0;bottom:0;width:60%;height:70%;background:var(--gold);opacity:.45}
+.about-photo img{position:relative;display:block;width:100%;height:450px;object-fit:cover;box-shadow:0 22px 50px #07172e24}
+.about-copy .kicker{margin-bottom:14px}
+.about-copy h3{font-family:Georgia,serif;font-size:2rem;font-weight:500;line-height:1.2;margin-bottom:18px;color:var(--navy)}
+.about-copy p{color:#5f6979;margin:0 0 15px}
+.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:30px}
+.stat{border-top:2px solid var(--gold);padding-top:13px}
+.stat strong{display:block;color:var(--navy);font-family:Georgia,serif;font-size:1.6rem;font-weight:500}
+.stat span{font-size:.75rem;color:var(--muted)}
+.dark-band{background:var(--navy);color:white;position:relative;overflow:hidden}
+.dark-band:before{content:"";position:absolute;width:420px;height:420px;border:1px solid #d8b46a2e;border-radius:50%;right:-130px;top:-210px;box-shadow:0 0 0 45px #d8b46a08,0 0 0 90px #d8b46a06}
+.dark-band .container{position:relative}
+.dark-band h2{color:white}
+.dark-band .section-head p{color:#c0cada}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#ffffff23;border:1px solid #ffffff23}
+.value{padding:30px;background:#0a1e39}
+.value .number{color:var(--gold);font-family:Georgia,serif;font-size:2rem}
+.value h3{font-size:1.05rem;margin:13px 0 8px}
+.value p{font-size:.9rem;color:#bdc8d7}
+.gallery-section{background:#fff}
+.gallery-intro{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:34px}
+.gallery-intro p{max-width:410px;color:var(--muted)}
+.gallery{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-template-rows:245px 245px;gap:14px}
+.photo-card{position:relative;overflow:hidden;background:#dfe3e9;cursor:pointer;min-height:180px}
+.photo-card:first-child{grid-row:span 2}
+.photo-card:nth-child(4){grid-column:2}
+.photo-card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .55s}
+.photo-card:hover img{transform:scale(1.055)}
+.photo-card:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(4,14,30,.78))}
+.photo-label{position:absolute;z-index:1;bottom:17px;left:18px;right:15px;color:white;font-size:.85rem;font-weight:750}
+.photo-label small{display:block;color:#e7c77f;font-size:.66rem;text-transform:uppercase;letter-spacing:.16em;margin-bottom:4px}
+.quote{padding:90px 24px;text-align:center;background:#eee9df}
+.quote .mark{font-family:Georgia,serif;font-size:4rem;color:#b18b43;line-height:.8}
+.quote blockquote{font-family:Georgia,serif;font-size:clamp(1.7rem,4vw,3rem);line-height:1.25;max-width:880px;margin:20px auto;color:var(--navy)}
+.quote p{color:var(--muted);font-size:.78rem;letter-spacing:.17em;text-transform:uppercase}
+.cta{background:var(--gold);padding:55px 24px}
+.cta-inner{max-width:1160px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:25px}
+.cta h2{font-size:clamp(2rem,4vw,3.2rem);margin:0;color:var(--navy)}
+.cta p{margin-top:8px;color:#29364a}
+.cta .btn{background:var(--navy);color:white;border-color:var(--navy)}
+footer{background:#041022;color:#d2d9e4;padding:35px 24px}
+.footer-inner{max-width:1160px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.footer-brand{font-family:Georgia,serif;font-size:1.3rem;color:white}
+.footer-brand span{color:var(--gold)}
+footer small{color:#9ca8ba}
+.lightbox{position:fixed;inset:0;background:#020814ed;z-index:50;display:none;align-items:center;justify-content:center;padding:24px}
+.lightbox.open{display:flex}
+.lightbox img{max-width:min(1100px,94vw);max-height:86vh;object-fit:contain;box-shadow:0 20px 70px #0008}
+.close-lightbox{position:absolute;top:18px;right:24px;border:1px solid #ffffff70;background:transparent;color:white;font-size:1.7rem;width:44px;height:44px;cursor:pointer}
+@media(max-width:800px){
+ .links{display:none;position:absolute;top:70px;left:0;right:0;background:var(--navy);padding:20px 24px;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}
+ .links.show{display:flex}.menu-btn{display:block}
+ .hero{min-height:610px}.hero-content{padding:90px 8vw 75px}.hero:before{background:linear-gradient(90deg,rgba(3,13,28,.9),rgba(3,13,28,.48)),linear-gradient(0deg,rgba(3,13,28,.8),transparent 70%),url("images/orientation-decor.jpg") center/cover}
+ .section{padding:72px 22px}.section-head,.about-grid{grid-template-columns:1fr;gap:24px}.about-photo img{height:360px}
+ .values{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:250px 190px 190px}.photo-card:first-child{grid-row:span 2}.photo-card:nth-child(4){grid-column:auto}
+ .gallery-intro,.cta-inner{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:480px){
+ .topbar{font-size:.65rem}.brand strong{font-size:.8rem}.brand small{font-size:.58rem}
+ .hero h1{font-size:3.25rem}.hero p{font-size:.96rem}.btn{padding:12px 14px}.btn-outline{margin:10px 0 0}
+ .hero:after{inset:10px}.stat-row{gap:8px}.stat strong{font-size:1.25rem}.stat span{font-size:.67rem}
+ .gallery{grid-template-columns:1fr;grid-template-rows:290px repeat(4,220px)}.photo-card:first-child{grid-row:auto}
+}
+</style>
 </head>
-
 <body>
+<div class="topbar"><span>UET Taxila · Pakistan</span><span>Orientation Edition / 2026</span></div>
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#home" aria-label="Orientation home">
+      <div class="brand-mark">R<span style="font-size:.7em">AI</span></div>
+      <div><strong>ROBOTICS & AI</strong><small>UET Taxila · Class of 2026</small></div>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
+    <nav class="links" id="navLinks">
+      <a href="#home">Home</a><a href="#story">Our Beginning</a><a href="#journey">Our Vision</a><a href="#gallery">Gallery</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="eyebrow">A new chapter begins</div>
+    <h1>Curiosity today.<br><em>Innovation tomorrow.</em></h1>
+    <p>Celebrating Orientation 2026 — the beginning of an extraordinary journey into Robotics, Artificial Intelligence, and the technologies shaping our future.</p>
+    <div class="hero-meta">
+      <span><b>✦</b> BS Robotics & Artificial Intelligence</span>
+      <span><b>✦</b> University of Engineering & Technology, Taxila</span>
+    </div>
+    <a class="btn" href="#gallery">EXPLORE THE MOMENTS <span aria-hidden="true">↗</span></a>
+    <a class="btn btn-outline" href="#story">DISCOVER OUR STORY</a>
+  </div>
+</section>
 
-  <header>
-    <h1>ORIENTATION 2026</h1>
-    <p>BS Robotics & Artificial Intelligence</p>
-    <p>University of Engineering and Technology, Taxila</p>
-  </header>
-
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#gallery">Gallery</a>
-  </nav>
-
-  <main>
-    <div class="hero" id="home">
-      <div class="hero-content">
-        <h2>Welcome to a Future of Innovation</h2>
-        <p>
-          Celebrating new beginnings, new friendships,
-          and the exciting journey of Robotics and Artificial Intelligence.
-        </p>
-        <a class="button" href="#gallery">Explore Our Memories</a>
+<section class="section" id="story">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="kicker">01 / The beginning</div><h2>More than a first day.</h2></div>
+      <p>Every meaningful journey starts with a room full of possibilities. Orientation is where new faces become familiar, ideas begin to take shape, and a class starts building its shared story.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-photo"><img src="images/uet-taxila-gate.jpg" alt="Our own photograph of the UET Taxila entrance"></div>
+      <div class="about-copy">
+        <div class="kicker">Our university · Our journey</div>
+        <h3>Learning to build what comes next.</h3>
+        <p>At the University of Engineering and Technology, Taxila, we begin a chapter driven by discovery, discipline, teamwork, and imagination.</p>
+        <p>Robotics and Artificial Intelligence bring together engineering, computing, and creative problem-solving. The journey ahead is not only about learning technology — it is about learning how to use it thoughtfully.</p>
+        <div class="stat-row">
+          <div class="stat"><strong>2026</strong><span>New beginnings</span></div>
+          <div class="stat"><strong>BS</strong><span>Robotics & AI</span></div>
+          <div class="stat"><strong>UET</strong><span>Taxila, Pakistan</span></div>
+        </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <section id="about">
-      <h2 class="section-title">About Our Orientation</h2>
-      <div class="gold-line"></div>
+<section class="section dark-band" id="journey">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="kicker">02 / The mindset</div><h2>Built on ideas.<br>United by purpose.</h2></div>
+      <p>Technology moves forward when people stay curious, share what they know, and work together on problems worth solving.</p>
+    </div>
+    <div class="values">
+      <article class="value"><div class="number">01</div><h3>Explore boldly</h3><p>Ask better questions, experiment with ideas, and stay open to learning something new every day.</p></article>
+      <article class="value"><div class="number">02</div><h3>Think intelligently</h3><p>Combine logical thinking with creativity to understand systems and develop useful solutions.</p></article>
+      <article class="value"><div class="number">03</div><h3>Build together</h3><p>Respect different perspectives, support classmates, and turn individual effort into shared progress.</p></article>
+    </div>
+  </div>
+</section>
 
-      <div class="about">
-        <img
-          src="images/uet-taxila-gate.jpg"
-          alt="University of Engineering and Technology Taxila"
-        >
+<section class="section gallery-section" id="gallery">
+  <div class="container">
+    <div class="gallery-intro">
+      <div><div class="kicker">03 / The memories</div><h2>Moments that<br>make it ours.</h2></div>
+      <p>Real moments from our orientation, captured in our own photographs. Select any image to view it larger.</p>
+    </div>
+    <div class="gallery">
+      <figure class="photo-card" tabindex="0"><img src="images/orientation-decor.jpg" alt="Orientation decorations and welcome display"><figcaption class="photo-label"><small>01 / Welcome</small>A warm beginning</figcaption></figure>
+      <figure class="photo-card" tabindex="0"><img src="images/guest-speaker.jpg" alt="Guest speaker addressing the students"><figcaption class="photo-label"><small>02 / Inspiration</small>Words to remember</figcaption></figure>
+      <figure class="photo-card" tabindex="0"><img src="images/class-group-1.jpg" alt="Our class group photograph"><figcaption class="photo-label"><small>03 / Together</small>Our people</figcaption></figure>
+      <figure class="photo-card" tabindex="0"><img src="images/class-group-2.jpg" alt="Students gathered for a class photograph"><figcaption class="photo-label"><small>04 / Community</small>A shared beginning</figcaption></figure>
+      <figure class="photo-card" tabindex="0"><img src="images/uet-taxila-gate.jpg" alt="UET Taxila entrance"><figcaption class="photo-label"><small>05 / Place</small>Where the journey begins</figcaption></figure>
+    </div>
+  </div>
+</section>
 
-        <div>
-          <h3>BS Robotics & AI</h3>
-          <p>
-            Welcome to Orientation 2026 at the University of Engineering
-            and Technology, Taxila. This event marks the beginning of an
-            exciting academic journey in Robotics and Artificial Intelligence.
-          </p>
-          <br>
-          <p>
-            Together, we look forward to learning, innovation,
-            collaboration, and building technologies for tomorrow.
-          </p>
-        </div>
-      </div>
-    </section>
+<section class="quote">
+  <div class="mark">“</div>
+  <blockquote>The future is not something we wait for. It is something we learn, imagine, and build together.</blockquote>
+  <p>Orientation 2026 · BS Robotics & Artificial Intelligence</p>
+</section>
 
-    <section id="gallery">
-      <h2 class="section-title">Our Special Memories</h2>
-      <div class="gold-line"></div>
-
-      <div class="gallery">
-        <div>
-          <img src="images/orientation-decor.jpg"
-               alt="Orientation decorations and welcome display">
-          <p class="caption">Welcome to Orientation</p>
-        </div>
-
-        <div>
-          <img src="images/orientation-speaker.jpg"
-               alt="Professor addressing students">
-          <p class="caption">Opening Ceremony</p>
-        </div>
-
-        <div>
-          <img src="images/class-group-1.jpg"
-               alt="Orientation class group photograph">
-          <p class="caption">Our Class Memories</p>
-        </div>
-
-        <div>
-          <img src="images/class-group-2.jpg"
-               alt="Students together at orientation">
-          <p class="caption">A New Beginning</p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="quote">
-        “The future belongs to those who dare to imagine,
-        innovate, and build.”
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>Designed by <span>Muhammad Usman</span></p>
-    <p>BS Robotics & AI | UET Taxila | Orientation 2026</p>
-  </footer>
-
+<section class="cta">
+  <div class="cta-inner">
+    <div><h2>Here’s to what comes next.</h2><p>One class. Countless ideas. A future still waiting to be built.</p></div>
+    <a class="btn" href="#home">BACK TO THE TOP ↑</a>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="footer-inner">
+    <div><div class="footer-brand">ORIENTATION <span>2026</span></div><small>BS Robotics & Artificial Intelligence · UET Taxila</small></div>
+    <div><small>Website designed by <strong style="color:white">Muhammad Usman</strong></small></div>
+  </div>
+</footer>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Expanded photograph">
+  <button class="close-lightbox" id="closeLightbox" aria-label="Close image">×</button>
+  <img id="lightboxImage" src="" alt="">
+</div>
+<script>
+const menuBtn=document.getElementById('menuBtn');
+const navLinks=document.getElementById('navLinks');
+menuBtn.addEventListener('click',()=>navLinks.classList.toggle('show'));
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('show')));
+const lightbox=document.getElementById('lightbox');
+const lightboxImage=document.getElementById('lightboxImage');
+function showImage(card){
+ const img=card.querySelector('img');
+ lightboxImage.src=img.src;
+ lightboxImage.alt=img.alt;
+ lightbox.classList.add('open');
+}
+document.querySelectorAll('.photo-card').forEach(card=>{
+ card.addEventListener('click',()=>showImage(card));
+ card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();showImage(card)}});
+});
+function closeImage(){lightbox.classList.remove('open');lightboxImage.src=''}
+document.getElementById('closeLightbox').addEventListener('click',closeImage);
+lightbox.addEventListener('click',e=>{if(e.target===lightbox)closeImage()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeImage()});
+</script>
 </body>
 </html>
